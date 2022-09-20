@@ -1,0 +1,12 @@
+﻿LaCode,PrimaryKey,SerialNo,message
+717,717_4,String in a number column,Column Ethnicity was 'hello' but should be a number
+717,717_4,String in a number column,Column q3a was 'there' but should be a number
+717,717_2,Put a decimal,Column q1 was 3.5 but should be a whole number
+716,716_6,Q3a Invalid,Column q3a was 999.0 when accepted values must be between 1 and 4
+716,716_4,Sexuality invalid value,"Column Sexuality was 999.0 when accepted values are [1, 2, 3, 4, 5, 6, nan]"
+717,717_1,No Response But Answered Questions,Column q1 was 2.0 but should be blank when the person did not respond to the questionnaire
+717,717_1,No Response But Answered Questions,Column q3b was 2.0 but should be blank when the person did not respond to the questionnaire
+716,716_3,No Response But Used Advocate,Column Advocate must be 2 when the person did not respond to the questionnaire
+716,716_3,No Response But Used Advocate,Column Interpreter must be 2 when the person did not respond to the questionnaire
+716,716_5,Easy Read Invalid,"Column q1 was 6.0 when accepted values are [1, 2, 3, 4, 5, nan] for users who recieved the easy read questionnaire"
+717,717_3,Had a question with all subquestions 2,"The list of subquestions ['q20a', 'q20b', 'q20c'] has one of these problems: there is a mix of nulls and not nulls; all the subquestions were answered 2 (no)"

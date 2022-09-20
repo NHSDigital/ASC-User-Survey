@@ -1,0 +1,3301 @@
+{
+  "PUBLICATION_YEAR": "2021",
+  "TEST_ANNEX_TABLES_FILE_PATH": "tests/TEST-pss-ascs-eng-2021-annex-tables.xlsx",
+  "OUTPUT_ANNEX_TABLE_FILE_NAME": "output.xlsx",
+  "TEMPLATE_ANNEX_TABLE_FILE_PATH": "templates/TEMPLATE-annex-tables.xlsx",
+  "DATA_RETURNS_DIRECTORY": "./tests/integration/fake_data_return_directory",
+  "EXCEL_HORIZONTAL_GAP_SIZE_CONFIG_BY_NAME": {
+    "1a": {
+      "SHEET_NAME": "T1a - Answers by Council",
+      "START_ROW": 6,
+      "START_COLUMN": 4,
+      "HORIZONTAL_GAP_SIZE": 1,
+      "VERTICAL_GAP_SIZE": 0
+    },
+    "1b": {
+      "SHEET_NAME": "T1b - Answers by Council",
+      "START_ROW": 6,
+      "START_COLUMN": 4,
+      "HORIZONTAL_GAP_SIZE": 1,
+      "VERTICAL_GAP_SIZE": 0
+    },
+    "5": {
+      "SHEET_NAME": "T5 - Margins of Error",
+      "START_ROW": 7,
+      "START_COLUMN": 4,
+      "HORIZONTAL_GAP_SIZE": 1,
+      "VERTICAL_GAP_SIZE": 0
+    }
+  },
+  "EXCEL_HORIZONTAL_GAP_SIZE_AND_SECTIONS_BY_NAME": {
+    "2a": {
+      "SHEET_NAME": "T2a - Answers by Demographic",
+      "START_ROW": 6,
+      "START_COLUMN": 2,
+      "HORIZONTAL_GAP_SIZE": 1,
+      "VERTICAL_GAP_SIZE": 1
+    },
+    "2b": {
+      "SHEET_NAME": "T2b - Answers by Demographic",
+      "START_ROW": 6,
+      "START_COLUMN": 2,
+      "HORIZONTAL_GAP_SIZE": 1,
+      "VERTICAL_GAP_SIZE": 1
+    },
+    "3a": {
+      "SHEET_NAME": "T3a - Answers by Response",
+      "START_ROW": 6,
+      "START_COLUMN": 2,
+      "HORIZONTAL_GAP_SIZE": 1,
+      "VERTICAL_GAP_SIZE": 1
+    },
+    "3b": {
+      "SHEET_NAME": "T3b - Answers by Response",
+      "START_ROW": 6,
+      "START_COLUMN": 2,
+      "HORIZONTAL_GAP_SIZE": 1,
+      "VERTICAL_GAP_SIZE": 1
+    }
+  },
+  "EXCEL_NO_HORIZONTAL_GAP_SIZE_AND_SECTIONS_BY_NAME": {
+    "4": {
+      "SHEET_NAME": "T4 - Response Rates",
+      "START_ROW": 5,
+      "START_COLUMN": 4,
+      "HORIZONTAL_GAP_SIZE": 0,
+      "VERTICAL_GAP_SIZE": 0
+    },
+    "6": {
+      "SHEET_NAME": "T6 - Demographics",
+      "START_ROW": 6,
+      "START_COLUMN": 4,
+      "HORIZONTAL_GAP_SIZE": 0,
+      "VERTICAL_GAP_SIZE": 0
+    }
+  },
+  "LA_CODE_WHITELIST": [
+    "211",
+    "213",
+    "219",
+    "316",
+    "607",
+    "608",
+    "615",
+    "616",
+    "618",
+    "621",
+    "716",
+    "718",
+    "723",
+    "727",
+    "728",
+    "803",
+    "914",
+    "916"
+  ],
+  "RESPONSE_RESPONDED_TO_SURVEY": 1,
+  "PRIMARY_SUPPORT_REASON_LEARNING_DISABILITY": 7,
+  "SUBQUESTION_A_INDEX": 0,
+  "ERRONEOUS_INPUT_VALUE": -9,
+  "ANSWERED_YES_TO_SUBQUESTION_RESPONSE": 1,
+  "ANSWERED_NO_TO_SUBQUESTION_RESPONSE": 2,
+  "QUESTIONAIRE_DATA_PATH": "//ic/ic_dme_dfs/QME_PROD/SOCE/SOCE_SURVEYS/ASCS/PYTHON/INPUT_FILES/ASCS Dataset/QuestionnaireDataFinal.csv",
+  "ELIGIBLE_POPULATION_DATA_PATH": "//ic/ic_dme_dfs/QME_PROD/SOCE/SOCE_SURVEYS/ASCS/INPUTS/2020-21/EligiblePopulationData.csv",
+  "STRATUM_COLUMN_NAMES": [
+    "stratum1Pop",
+    "stratum2Pop",
+    "stratum3Pop",
+    "stratum4Pop"
+  ],
+  "STRATUM_COLUMN_NAMES_SAMPLES": [
+    "stratum1Sample",
+    "stratum2Sample",
+    "stratum3Sample",
+    "stratum4Sample"
+  ],
+  "IDENTIFIER_COLUMNS_FOR_SUPPRESSED_QUESTIONNAIRE_CSV": [
+    "LaCode",
+    "Age_Grouped",
+    "Gender_Grouped",
+    "SupportSetting",
+    "Ethnicity_Grouped",
+    "PrimarySupportReason_Grouped",
+    "Stratum_Grouped"
+  ],
+  "COLUMNS_TO_SUPPRESS_IN_QUESTIONNAIRE_CSV": [
+    "Age_Grouped",
+    "Gender_Grouped",
+    "SupportSetting",
+    "Ethnicity_Grouped",
+    "PrimarySupportReason_Grouped",
+    "Stratum_Grouped"
+  ],
+  "COLUMNS_TO_SUPPRESS_IN_ANNEX_TABLE": [
+    "percentage",
+    "est_population",
+    "supergroup_population",
+    "supergroup_question_respondents"
+  ],
+  "AUXILIARY_COLUMNS_TO_OUTPUT": [
+    "column_question",
+    "column_response",
+    "est_population",
+    "percentage",
+    "margin_of_error",
+    "respondents",
+    "supergroup_population",
+    "supergroup_question_respondents",
+    "suppress",
+    "suppress_margin_of_error"
+  ],
+  "ANNEX_TABLE_4_COLUMN_ORDER": [
+    "total_response_rate",
+    "q1Comb",
+    "q2aComb",
+    "q2b",
+    "q2c",
+    "q3a",
+    "q3b",
+    "q4a",
+    "q5a",
+    "q6a",
+    "q7a",
+    "q7b",
+    "q8a",
+    "q9a",
+    "q10",
+    "q11",
+    "q12",
+    "q13",
+    "q14a",
+    "q14b",
+    "q15a",
+    "q15b",
+    "q15c",
+    "q15d",
+    "q16a",
+    "q16b",
+    "q16c",
+    "q16d",
+    "q17",
+    "q18",
+    "q19",
+    "q20",
+    "q21",
+    "q22"
+  ],
+  "ANNEX_TABLE_4_QUESTIONS_TO_COUNT": [
+    "q1Comb",
+    "q2aComb",
+    "q2b",
+    "q2c",
+    "q3a",
+    "q3b",
+    "q4a",
+    "q5a",
+    "q6a",
+    "q7a",
+    "q7b",
+    "q8a",
+    "q9a",
+    "q10",
+    "q11",
+    "q12",
+    "q13",
+    "q14a",
+    "q14b",
+    "q15a",
+    "q15b",
+    "q15c",
+    "q15d",
+    "q16a",
+    "q16b",
+    "q16c",
+    "q16d",
+    "q17",
+    "q18",
+    "q19a",
+    "q20a",
+    "q21",
+    "q22a"
+  ],
+  "TYPICAL_QUESTIONS_LIST": [
+    "q2b",
+    "q2c",
+    "q3a",
+    "q3b",
+    "q4a",
+    "q4b",
+    "q5a",
+    "q5b",
+    "q6a",
+    "q6b",
+    "q7a",
+    "q7b",
+    "q8a",
+    "q8b",
+    "q9a",
+    "q9b",
+    "q10",
+    "q11",
+    "q12",
+    "q13",
+    "q14a",
+    "q14b",
+    "q15a",
+    "q15b",
+    "q15c",
+    "q15d",
+    "q16a",
+    "q16b",
+    "q16c",
+    "q16d",
+    "q17",
+    "q18",
+    "q21"
+  ],
+  "COLUMNS_TO_SHOW_IN_SUPPRESSED_QUESTIONNAIRE_CSV": [
+    "LaCode",
+    "MethodCollection_Grouped",
+    "Response",
+    "Gender_Grouped",
+    "Ethnicity_Grouped",
+    "Age_Grouped",
+    "SupportSetting",
+    "Stratum_Grouped",
+    "MechOfDelivery_Grouped",
+    "PrimarySupportReason_Grouped",
+    "GrossAnnualBudget",
+    "BudgetContribution",
+    "BudgetEquipment",
+    "BudgetCareHome",
+    "OtherIncome",
+    "Advocate",
+    "Interpreter",
+    "Translated_Grouped",
+    "Questionnaire_Grouped",
+    "Replacement",
+    "OriginalReminder",
+    "q1Std",
+    "q1ER",
+    "q1Comb",
+    "q2aStd",
+    "q2aER",
+    "q2aComb",
+    "q2b",
+    "q2c",
+    "q3a",
+    "q3b",
+    "q4a",
+    "q4b",
+    "q5a",
+    "q5b",
+    "q6a",
+    "q6b",
+    "q7a",
+    "q7b",
+    "q8a",
+    "q8b",
+    "q9a",
+    "q9b",
+    "q10",
+    "q11",
+    "q12",
+    "q13",
+    "q14a",
+    "q14b",
+    "q15a",
+    "q15b",
+    "q15c",
+    "q15d",
+    "q16a",
+    "q16b",
+    "q16c",
+    "q16d",
+    "q17",
+    "q18",
+    "q19a",
+    "q19b",
+    "q19c",
+    "q20a",
+    "q20b",
+    "q20c",
+    "q21",
+    "q22a",
+    "q22b",
+    "q22c",
+    "q22d",
+    "q22e",
+    "q22f"
+  ],
+  "QUESTIONNAIRE_CSV_MAX_SIZE_OF_GROUP_TO_SUPPRESS": 2,
+  "QUESTIONS_AND_VALUES_TO_EXCLUDE": {
+    "q12": 1
+  },
+  "MULTIPLE_CHOICE_QUESTIONS": {
+    "q19": [
+      "a",
+      "b",
+      "c"
+    ],
+    "q20": [
+      "a",
+      "b",
+      "c"
+    ],
+    "q22": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ]
+  },
+  "MULTIPLE_CHOICE_QUESTIONS_TO_EXCLUDE": {
+    "q22": {
+      "subquestion": "a",
+      "value": 1
+    }
+  },
+  "EASY_READ_QUESTIONS": [
+    "q1",
+    "q2a"
+  ],
+  "EASY_READ_QUESTIONNAIRE_TYPES": [
+    3,
+    4
+  ],
+  "DEMOGRAPHICS_CONVERSIONS": {
+    "Gender": {
+      "1": "Male",
+      "2": "Female",
+      "3": "Other"
+    },
+    "Ethnicity": {
+      "1": "White",
+      "2": "White",
+      "3": "White",
+      "4": "White",
+      "5": "Mixed",
+      "6": "Mixed",
+      "7": "Mixed",
+      "8": "Mixed",
+      "9": "Asian or Asian British",
+      "10": "Asian or Asian British",
+      "11": "Asian or Asian British",
+      "12": "Asian or Asian British",
+      "13": "Asian or Asian British",
+      "14": "Black or Black British",
+      "15": "Black or Black British",
+      "16": "Black or Black British",
+      "17": "Other",
+      "18": "Other",
+      "98": "Not Stated",
+      "99": "Not Stated"
+    },
+    "Religion": {
+      "1": "None",
+      "2": "Christian",
+      "3": "Buddhist",
+      "4": "Hindu",
+      "5": "Jewish",
+      "6": "Muslim",
+      "7": "Sikh",
+      "8": "Other",
+      "99": "Refused to say"
+    },
+    "PrimarySupportReason": {
+      "1": "Physical Support",
+      "2": "Physical Support",
+      "3": "Sensory Support",
+      "4": "Sensory Support",
+      "5": "Sensory Support",
+      "6": "Support with Memory and Cognition",
+      "7": "Learning Disability Support",
+      "8": "Mental Health Support",
+      "9": "Social Support",
+      "10": "Social Support",
+      "11": "Social Support",
+      "12": "Social Support"
+    },
+    "Stratum": {
+      "1": "1 - Learning disability support [all ages]",
+      "2": "2 - 18-64, excluding learning disability support",
+      "3": "3 - 65 and over in residential care, excluding learning disability support",
+      "4": "4 - 65 and over in the community, excluding learning disability support"
+    },
+    "Sexuality": {
+      "1": "Heterosexual / Straight",
+      "2": "Gay / Lesbian / Bisexual / Other",
+      "3": "Gay / Lesbian / Bisexual / Other",
+      "4": "Gay / Lesbian / Bisexual / Other",
+      "5": "Don't know / Refused",
+      "6": "Don't know / Refused"
+    },
+    "Questionnaire": {
+      "1": "Questionnaire for service users in the community",
+      "2": "Questionnaire for service users in resdiential or nursing care",
+      "3": "Easy-read questionnaire"
+    },
+    "MethodCollection": {
+      "1": "Post",
+      "2": "Face-to-face interview",
+      "3": "Telephone interview"
+    },
+    "SupportSetting": {
+      "1": "Community",
+      "2": "Residential Care",
+      "3": "Nursing Care"
+    },
+    "MechOfDelivery": {
+      "1": "Direct Payment Only",
+      "2": "Part Direct Payment",
+      "3": "LA Managed Personal Budget",
+      "4": "LA Commissioned Support Only",
+      "5": "Not applicable"
+    },
+    "FullCost": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "Translated": {
+      "1": "No",
+      "2": "Yes",
+      "3": "Yes",
+      "4": "Yes",
+      "5": "Yes",
+      "6": "Yes",
+      "7": "Yes",
+      "8": "Yes",
+      "9": "Yes",
+      "10": "Yes",
+      "11": "Yes",
+      "12": "Yes",
+      "13": "Yes",
+      "14": "Yes",
+      "15": "Yes",
+      "16": "Yes",
+      "17": "Yes",
+      "18": "Yes",
+      "19": "Yes"
+    },
+    "RHC_autism": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "RHC_asperger": {
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "AGE_GROUP_BINS_START_AGES": [
+    18,
+    25,
+    35,
+    45,
+    55,
+    65,
+    75,
+    85, Infinity
+  ],
+  "EASY_READ_COLUMN_ENDINGS": [
+    "Std",
+    "ER",
+    "Comb"
+  ],
+  "LA_CODE_LIST_BY_AVERAGE_GROUP_NAME": {
+    "18 CASSR Average": [
+      "211",
+      "213",
+      "219",
+      "316",
+      "607",
+      "608",
+      "615",
+      "616",
+      "618",
+      "621",
+      "716",
+      "718",
+      "723",
+      "727",
+      "728",
+      "803",
+      "914",
+      "916"
+    ]
+  },
+  "STRATIFIED_BY_LA_CORRECT_ROW_ORDER": [
+    "211",
+    "213",
+    "219",
+    "316",
+    "607",
+    "608",
+    "615",
+    "616",
+    "618",
+    "621",
+    "716",
+    "718",
+    "723",
+    "727",
+    "728",
+    "803",
+    "914",
+    "916",
+    "18 CASSR Average",
+    "102",
+    "104",
+    "106",
+    "107",
+    "108",
+    "109",
+    "110",
+    "111",
+    "112",
+    "113",
+    "114",
+    "116",
+    "117",
+    "204",
+    "205",
+    "206",
+    "207",
+    "209",
+    "210",
+    "212",
+    "214",
+    "215",
+    "216",
+    "217",
+    "218",
+    "304",
+    "305",
+    "306",
+    "307",
+    "308",
+    "309",
+    "310",
+    "311",
+    "312",
+    "313",
+    "315",
+    "317",
+    "318",
+    "319",
+    "321",
+    "322",
+    "323",
+    "324",
+    "325",
+    "326",
+    "327",
+    "404",
+    "406",
+    "407",
+    "408",
+    "409",
+    "410",
+    "411",
+    "412",
+    "413",
+    "414",
+    "415",
+    "416",
+    "417",
+    "418",
+    "503",
+    "504",
+    "506",
+    "507",
+    "508",
+    "509",
+    "510",
+    "511",
+    "512",
+    "606",
+    "609",
+    "611",
+    "613",
+    "614",
+    "617",
+    "619",
+    "620",
+    "622",
+    "623",
+    "624",
+    "625",
+    "626",
+    "702",
+    "703",
+    "704",
+    "705",
+    "706",
+    "707",
+    "708",
+    "709",
+    "710",
+    "711",
+    "712",
+    "713",
+    "714",
+    "717",
+    "719",
+    "720",
+    "721",
+    "722",
+    "724",
+    "725",
+    "726",
+    "729",
+    "730",
+    "731",
+    "732",
+    "733",
+    "734",
+    "735",
+    "738",
+    "805",
+    "807",
+    "809",
+    "812",
+    "813",
+    "814",
+    "815",
+    "816",
+    "817",
+    "819",
+    "820",
+    "821",
+    "902",
+    "904",
+    "905",
+    "906",
+    "908",
+    "909",
+    "910",
+    "911",
+    "912",
+    "913"
+  ],
+  "TABLE6_CORRECT_ROW_ORDER": [
+    [
+      "Age",
+      "18-24"
+    ],
+    [
+      "Age",
+      "25-34"
+    ],
+    [
+      "Age",
+      "35-44"
+    ],
+    [
+      "Age",
+      "45-54"
+    ],
+    [
+      "Age",
+      "55-64"
+    ],
+    [
+      "Age",
+      "65-74"
+    ],
+    [
+      "Age",
+      "75-84"
+    ],
+    [
+      "Age",
+      "85-inf"
+    ],
+    [
+      "Gender",
+      "Male"
+    ],
+    [
+      "Gender",
+      "Female"
+    ],
+    [
+      "Gender",
+      "Other"
+    ],
+    [
+      "Ethnicity",
+      "White"
+    ],
+    [
+      "Ethnicity",
+      "Mixed"
+    ],
+    [
+      "Ethnicity",
+      "Asian or Asian British"
+    ],
+    [
+      "Ethnicity",
+      "Black or Black British"
+    ],
+    [
+      "Ethnicity",
+      "Other"
+    ],
+    [
+      "Ethnicity",
+      "Not Stated"
+    ],
+    [
+      "Sexuality",
+      1
+    ],
+    [
+      "Sexuality",
+      2
+    ],
+    [
+      "Sexuality",
+      3
+    ],
+    [
+      "Sexuality",
+      4
+    ],
+    [
+      "Sexuality",
+      5
+    ],
+    [
+      "Sexuality",
+      6
+    ],
+    [
+      "Religion",
+      "None"
+    ],
+    [
+      "Religion",
+      "Christian"
+    ],
+    [
+      "Religion",
+      "Buddhist"
+    ],
+    [
+      "Religion",
+      "Hindu"
+    ],
+    [
+      "Religion",
+      "Jewish"
+    ],
+    [
+      "Religion",
+      "Muslim"
+    ],
+    [
+      "Religion",
+      "Sikh"
+    ],
+    [
+      "Religion",
+      "Other"
+    ],
+    [
+      "Religion",
+      "Refused to say"
+    ],
+    [
+      "PrimarySupportReason",
+      "Physical Support"
+    ],
+    [
+      "PrimarySupportReason",
+      "Sensory Support"
+    ],
+    [
+      "PrimarySupportReason",
+      "Support with Memory and Cognition"
+    ],
+    [
+      "PrimarySupportReason",
+      "Learning Disability Support"
+    ],
+    [
+      "PrimarySupportReason",
+      "Mental Health Support"
+    ],
+    [
+      "PrimarySupportReason",
+      "Social Support"
+    ],
+    [
+      "MechOfDelivery",
+      "Direct Payment Only"
+    ],
+    [
+      "MechOfDelivery",
+      "Part Direct Payment"
+    ],
+    [
+      "MechOfDelivery",
+      "LA Managed Personal Budget"
+    ],
+    [
+      "MechOfDelivery",
+      "LA Commissioned Support Only"
+    ],
+    [
+      "MechOfDelivery",
+      "Not applicable"
+    ],
+    [
+      "SupportSetting",
+      "Community"
+    ],
+    [
+      "SupportSetting",
+      "Residential Care"
+    ],
+    [
+      "SupportSetting",
+      "Nursing Care"
+    ],
+    [
+      "RHC_autism",
+      "Yes"
+    ],
+    [
+      "RHC_autism",
+      "No"
+    ],
+    [
+      "RHC_asperger",
+      "Yes"
+    ],
+    [
+      "RHC_asperger",
+      "No"
+    ],
+    [
+      "Advocate",
+      1
+    ],
+    [
+      "Advocate",
+      2
+    ],
+    [
+      "Interpreter",
+      1
+    ],
+    [
+      "Interpreter",
+      2
+    ],
+    [
+      "Translated",
+      "No"
+    ],
+    [
+      "Translated",
+      "Yes"
+    ]
+  ],
+  "STRATIFIED_BY_DEMOGRAPHIC_CORRECT_ROW_ORDER": [
+    [
+      "Average",
+      "18 CASSR Average"
+    ],
+    [
+      "PrimarySupportReason",
+      "Physical Support"
+    ],
+    [
+      "PrimarySupportReason",
+      "Sensory Support"
+    ],
+    [
+      "PrimarySupportReason",
+      "Support with Memory and Cognition"
+    ],
+    [
+      "PrimarySupportReason",
+      "Learning Disability Support"
+    ],
+    [
+      "PrimarySupportReason",
+      "Mental Health Support"
+    ],
+    [
+      "PrimarySupportReason",
+      "Social Support"
+    ],
+    [
+      "Gender",
+      "Male"
+    ],
+    [
+      "Gender",
+      "Female"
+    ],
+    [
+      "Gender",
+      "Other"
+    ],
+    [
+      "Age",
+      "18-24"
+    ],
+    [
+      "Age",
+      "25-34"
+    ],
+    [
+      "Age",
+      "35-44"
+    ],
+    [
+      "Age",
+      "45-54"
+    ],
+    [
+      "Age",
+      "55-64"
+    ],
+    [
+      "Age",
+      "65-74"
+    ],
+    [
+      "Age",
+      "75-84"
+    ],
+    [
+      "Age",
+      "85-inf"
+    ],
+    [
+      "Stratum",
+      "1 - Learning disability support [all ages]"
+    ],
+    [
+      "Stratum",
+      "2 - 18-64, excluding learning disability support"
+    ],
+    [
+      "Stratum",
+      "3 - 65 and over in residential care, excluding learning disability support"
+    ],
+    [
+      "Stratum",
+      "4 - 65 and over in the community, excluding learning disability support"
+    ],
+    [
+      "Religion",
+      "None"
+    ],
+    [
+      "Religion",
+      "Christian"
+    ],
+    [
+      "Religion",
+      "Buddhist"
+    ],
+    [
+      "Religion",
+      "Hindu"
+    ],
+    [
+      "Religion",
+      "Jewish"
+    ],
+    [
+      "Religion",
+      "Muslim"
+    ],
+    [
+      "Religion",
+      "Sikh"
+    ],
+    [
+      "Religion",
+      "Other"
+    ],
+    [
+      "Religion",
+      "Refused to say"
+    ],
+    [
+      "Ethnicity",
+      "White"
+    ],
+    [
+      "Ethnicity",
+      "Mixed"
+    ],
+    [
+      "Ethnicity",
+      "Asian or Asian British"
+    ],
+    [
+      "Ethnicity",
+      "Black or Black British"
+    ],
+    [
+      "Ethnicity",
+      "Other"
+    ],
+    [
+      "Ethnicity",
+      "Not Stated"
+    ],
+    [
+      "Sexuality",
+      "Heterosexual / Straight"
+    ],
+    [
+      "Sexuality",
+      "Gay / Lesbian / Bisexual / Other"
+    ],
+    [
+      "Sexuality",
+      "Don't know / Refused"
+    ],
+    [
+      "Questionnaire",
+      "Questionnaire for service users in the community"
+    ],
+    [
+      "Questionnaire",
+      "Questionnaire for service users in resdiential or nursing care"
+    ],
+    [
+      "Questionnaire",
+      "Easy-read questionnaire"
+    ],
+    [
+      "MethodCollection",
+      "Post"
+    ],
+    [
+      "MethodCollection",
+      "Face-to-face interview"
+    ],
+    [
+      "MethodCollection",
+      "Telephone interview"
+    ],
+    [
+      "Translated",
+      "Yes"
+    ],
+    [
+      "Translated",
+      "No"
+    ],
+    [
+      "RHC",
+      "Autism"
+    ],
+    [
+      "RHC",
+      "Asperger"
+    ],
+    [
+      "SupportSetting",
+      "Community"
+    ],
+    [
+      "SupportSetting",
+      "Residential Care"
+    ],
+    [
+      "SupportSetting",
+      "Nursing Care"
+    ],
+    [
+      "MechOfDelivery",
+      "Direct Payment Only"
+    ],
+    [
+      "MechOfDelivery",
+      "Part Direct Payment"
+    ],
+    [
+      "MechOfDelivery",
+      "LA Managed Personal Budget"
+    ],
+    [
+      "MechOfDelivery",
+      "LA Commissioned Support Only"
+    ],
+    [
+      "MechOfDelivery",
+      "Not applicable"
+    ],
+    [
+      "FullCost",
+      "Yes"
+    ],
+    [
+      "FullCost",
+      "No"
+    ]
+  ],
+  "STRATIFIED_BY_RESPONSE_CORRECT_ROW_ORDER": [
+    [
+      "Average",
+      "18 CASSR Average"
+    ],
+    [
+      "q1Std",
+      1
+    ],
+    [
+      "q1Std",
+      2
+    ],
+    [
+      "q1Std",
+      3
+    ],
+    [
+      "q1Std",
+      4
+    ],
+    [
+      "q1Std",
+      5
+    ],
+    [
+      "q1Std",
+      6
+    ],
+    [
+      "q1Std",
+      7
+    ],
+    [
+      "q1ER",
+      1
+    ],
+    [
+      "q1ER",
+      2
+    ],
+    [
+      "q1ER",
+      3
+    ],
+    [
+      "q1ER",
+      4
+    ],
+    [
+      "q1ER",
+      5
+    ],
+    [
+      "q1Comb",
+      1
+    ],
+    [
+      "q1Comb",
+      2
+    ],
+    [
+      "q1Comb",
+      3
+    ],
+    [
+      "q1Comb",
+      4
+    ],
+    [
+      "q1Comb",
+      5
+    ],
+    [
+      "q2aStd",
+      1
+    ],
+    [
+      "q2aStd",
+      2
+    ],
+    [
+      "q2aStd",
+      3
+    ],
+    [
+      "q2aStd",
+      4
+    ],
+    [
+      "q2aStd",
+      5
+    ],
+    [
+      "q2aStd",
+      6
+    ],
+    [
+      "q2aStd",
+      7
+    ],
+    [
+      "q2aER",
+      1
+    ],
+    [
+      "q2aER",
+      2
+    ],
+    [
+      "q2aER",
+      3
+    ],
+    [
+      "q2aER",
+      4
+    ],
+    [
+      "q2aER",
+      5
+    ],
+    [
+      "q2aComb",
+      1
+    ],
+    [
+      "q2aComb",
+      2
+    ],
+    [
+      "q2aComb",
+      3
+    ],
+    [
+      "q2aComb",
+      4
+    ],
+    [
+      "q2aComb",
+      5
+    ],
+    [
+      "q2b",
+      1
+    ],
+    [
+      "q2b",
+      2
+    ],
+    [
+      "q2c",
+      1
+    ],
+    [
+      "q2c",
+      2
+    ],
+    [
+      "q2c",
+      3
+    ],
+    [
+      "q3a",
+      1
+    ],
+    [
+      "q3a",
+      2
+    ],
+    [
+      "q3a",
+      3
+    ],
+    [
+      "q3a",
+      4
+    ],
+    [
+      "q3b",
+      1
+    ],
+    [
+      "q3b",
+      2
+    ],
+    [
+      "q4a",
+      1
+    ],
+    [
+      "q4a",
+      2
+    ],
+    [
+      "q4a",
+      3
+    ],
+    [
+      "q4a",
+      4
+    ],
+    [
+      "q4b",
+      1
+    ],
+    [
+      "q4b",
+      2
+    ],
+    [
+      "q5a",
+      1
+    ],
+    [
+      "q5a",
+      2
+    ],
+    [
+      "q5a",
+      3
+    ],
+    [
+      "q5a",
+      4
+    ],
+    [
+      "q5b",
+      1
+    ],
+    [
+      "q5b",
+      2
+    ],
+    [
+      "q6a",
+      1
+    ],
+    [
+      "q6a",
+      2
+    ],
+    [
+      "q6a",
+      3
+    ],
+    [
+      "q6a",
+      4
+    ],
+    [
+      "q6b",
+      1
+    ],
+    [
+      "q6b",
+      2
+    ],
+    [
+      "q7a",
+      1
+    ],
+    [
+      "q7a",
+      2
+    ],
+    [
+      "q7a",
+      3
+    ],
+    [
+      "q7a",
+      4
+    ],
+    [
+      "q7b",
+      1
+    ],
+    [
+      "q7b",
+      2
+    ],
+    [
+      "q8a",
+      1
+    ],
+    [
+      "q8a",
+      2
+    ],
+    [
+      "q8a",
+      3
+    ],
+    [
+      "q8a",
+      4
+    ],
+    [
+      "q8b",
+      1
+    ],
+    [
+      "q8b",
+      2
+    ],
+    [
+      "q9a",
+      1
+    ],
+    [
+      "q9a",
+      2
+    ],
+    [
+      "q9a",
+      3
+    ],
+    [
+      "q9a",
+      4
+    ],
+    [
+      "q9b",
+      1
+    ],
+    [
+      "q9b",
+      2
+    ],
+    [
+      "q10",
+      1
+    ],
+    [
+      "q10",
+      2
+    ],
+    [
+      "q10",
+      3
+    ],
+    [
+      "q10",
+      4
+    ],
+    [
+      "q11",
+      1
+    ],
+    [
+      "q11",
+      2
+    ],
+    [
+      "q11",
+      3
+    ],
+    [
+      "q11",
+      4
+    ],
+    [
+      "q12",
+      1
+    ],
+    [
+      "q12",
+      2
+    ],
+    [
+      "q12",
+      3
+    ],
+    [
+      "q12",
+      4
+    ],
+    [
+      "q12",
+      5
+    ],
+    [
+      "q13",
+      1
+    ],
+    [
+      "q13",
+      2
+    ],
+    [
+      "q13",
+      3
+    ],
+    [
+      "q13",
+      4
+    ],
+    [
+      "q13",
+      5
+    ],
+    [
+      "q14a",
+      1
+    ],
+    [
+      "q14a",
+      2
+    ],
+    [
+      "q14a",
+      3
+    ],
+    [
+      "q14b",
+      1
+    ],
+    [
+      "q14b",
+      2
+    ],
+    [
+      "q14b",
+      3
+    ],
+    [
+      "q15a",
+      1
+    ],
+    [
+      "q15a",
+      2
+    ],
+    [
+      "q15a",
+      3
+    ],
+    [
+      "q15b",
+      1
+    ],
+    [
+      "q15b",
+      2
+    ],
+    [
+      "q15b",
+      3
+    ],
+    [
+      "q15c",
+      1
+    ],
+    [
+      "q15c",
+      2
+    ],
+    [
+      "q15c",
+      3
+    ],
+    [
+      "q15d",
+      1
+    ],
+    [
+      "q15d",
+      2
+    ],
+    [
+      "q15d",
+      3
+    ],
+    [
+      "q16a",
+      1
+    ],
+    [
+      "q16a",
+      2
+    ],
+    [
+      "q16a",
+      3
+    ],
+    [
+      "q16b",
+      1
+    ],
+    [
+      "q16b",
+      2
+    ],
+    [
+      "q16b",
+      3
+    ],
+    [
+      "q16c",
+      1
+    ],
+    [
+      "q16c",
+      2
+    ],
+    [
+      "q16c",
+      3
+    ],
+    [
+      "q16d",
+      1
+    ],
+    [
+      "q16d",
+      2
+    ],
+    [
+      "q16d",
+      3
+    ],
+    [
+      "q17",
+      1
+    ],
+    [
+      "q17",
+      2
+    ],
+    [
+      "q17",
+      3
+    ],
+    [
+      "q17",
+      4
+    ],
+    [
+      "q18",
+      1
+    ],
+    [
+      "q18",
+      2
+    ],
+    [
+      "q18",
+      3
+    ],
+    [
+      "q18",
+      4
+    ],
+    [
+      "q19",
+      "a"
+    ],
+    [
+      "q19",
+      "b"
+    ],
+    [
+      "q19",
+      "c"
+    ],
+    [
+      "q20",
+      "a"
+    ],
+    [
+      "q20",
+      "b"
+    ],
+    [
+      "q20",
+      "c"
+    ],
+    [
+      "q21",
+      1
+    ],
+    [
+      "q21",
+      2
+    ],
+    [
+      "q21",
+      3
+    ],
+    [
+      "q21",
+      4
+    ],
+    [
+      "q22",
+      "a"
+    ],
+    [
+      "q22",
+      "b"
+    ],
+    [
+      "q22",
+      "c"
+    ],
+    [
+      "q22",
+      "d"
+    ],
+    [
+      "q22",
+      "e"
+    ],
+    [
+      "q22",
+      "f"
+    ]
+  ],
+  "STRATIFIED_PIVOTTED_TABLES_COLUMN_RESPONSES_BY_QUESTION": {
+    "q1Std": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "q1ER": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q1Comb": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q2aStd": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "q2aER": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q2aComb": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q2b": [
+      1,
+      2
+    ],
+    "q2c": [
+      1,
+      2,
+      3
+    ],
+    "q3a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q3b": [
+      1,
+      2
+    ],
+    "q4a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q4b": [
+      1,
+      2
+    ],
+    "q5a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q5b": [
+      1,
+      2
+    ],
+    "q6a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q6b": [
+      1,
+      2
+    ],
+    "q7a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q7b": [
+      1,
+      2
+    ],
+    "q8a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q8b": [
+      1,
+      2
+    ],
+    "q9a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q9b": [
+      1,
+      2
+    ],
+    "q10": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q11": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q12": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q12Excl": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "q13": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q14a": [
+      1,
+      2,
+      3
+    ],
+    "q14b": [
+      1,
+      2,
+      3
+    ],
+    "q15a": [
+      1,
+      2,
+      3
+    ],
+    "q15b": [
+      1,
+      2,
+      3
+    ],
+    "q15c": [
+      1,
+      2,
+      3
+    ],
+    "q15d": [
+      1,
+      2,
+      3
+    ],
+    "q16a": [
+      1,
+      2,
+      3
+    ],
+    "q16b": [
+      1,
+      2,
+      3
+    ],
+    "q16c": [
+      1,
+      2,
+      3
+    ],
+    "q16d": [
+      1,
+      2,
+      3
+    ],
+    "q17": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q18": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q19": [
+      "a",
+      "b",
+      "c"
+    ],
+    "q20": [
+      "a",
+      "b",
+      "c"
+    ],
+    "q21": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q22": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "q22Excl": [
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ]
+  },
+  "ALL_LA_CODES": [
+    "102",
+    "104",
+    "106",
+    "107",
+    "108",
+    "109",
+    "110",
+    "111",
+    "112",
+    "113",
+    "114",
+    "116",
+    "117",
+    "204",
+    "205",
+    "206",
+    "207",
+    "209",
+    "210",
+    "211",
+    "212",
+    "213",
+    "214",
+    "215",
+    "216",
+    "217",
+    "218",
+    "219",
+    "304",
+    "305",
+    "306",
+    "307",
+    "308",
+    "309",
+    "310",
+    "311",
+    "312",
+    "313",
+    "315",
+    "316",
+    "317",
+    "318",
+    "319",
+    "321",
+    "322",
+    "323",
+    "324",
+    "325",
+    "326",
+    "327",
+    "404",
+    "406",
+    "407",
+    "408",
+    "409",
+    "410",
+    "411",
+    "412",
+    "413",
+    "414",
+    "415",
+    "416",
+    "417",
+    "418",
+    "503",
+    "504",
+    "506",
+    "507",
+    "508",
+    "509",
+    "510",
+    "511",
+    "512",
+    "606",
+    "607",
+    "608",
+    "609",
+    "611",
+    "613",
+    "614",
+    "615",
+    "616",
+    "617",
+    "618",
+    "619",
+    "620",
+    "621",
+    "622",
+    "623",
+    "624",
+    "625",
+    "626",
+    "702",
+    "703",
+    "704",
+    "705",
+    "706",
+    "707",
+    "708",
+    "709",
+    "710",
+    "711",
+    "712",
+    "713",
+    "714",
+    "716",
+    "717",
+    "718",
+    "719",
+    "720",
+    "721",
+    "722",
+    "723",
+    "724",
+    "725",
+    "726",
+    "727",
+    "728",
+    "729",
+    "730",
+    "731",
+    "732",
+    "733",
+    "734",
+    "735",
+    "738",
+    "803",
+    "805",
+    "807",
+    "809",
+    "812",
+    "813",
+    "814",
+    "815",
+    "816",
+    "817",
+    "819",
+    "820",
+    "821",
+    "902",
+    "904",
+    "905",
+    "906",
+    "908",
+    "909",
+    "910",
+    "911",
+    "912",
+    "913",
+    "914",
+    "916"
+  ],
+  "POSSIBLE_RESPONSES_BY_QUESTION_AUX_TABLE": {
+    "q1Std": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "q1ER": [
+      1,
+      2,
+      3,
+      5,
+      4
+    ],
+    "q1Comb": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q2aStd": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "q2aER": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q2aComb": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q2b": [
+      1,
+      2
+    ],
+    "q2c": [
+      1,
+      2,
+      3
+    ],
+    "q3a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q3b": [
+      1,
+      2
+    ],
+    "q4a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q4b": [
+      1,
+      2
+    ],
+    "q5a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q5b": [
+      1,
+      2
+    ],
+    "q6a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q6b": [
+      1,
+      2
+    ],
+    "q7a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q7b": [
+      1,
+      2
+    ],
+    "q8a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q8b": [
+      1,
+      2
+    ],
+    "q9a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q9b": [
+      1,
+      2
+    ],
+    "q10": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q11": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q12": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q13": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q14a": [
+      1,
+      2,
+      3
+    ],
+    "q14b": [
+      1,
+      2,
+      3
+    ],
+    "q15a": [
+      1,
+      2,
+      3
+    ],
+    "q15b": [
+      1,
+      2,
+      3
+    ],
+    "q15c": [
+      1,
+      2,
+      3
+    ],
+    "q15d": [
+      1,
+      2,
+      3
+    ],
+    "q16a": [
+      1,
+      2,
+      3
+    ],
+    "q16b": [
+      1,
+      2,
+      3
+    ],
+    "q16c": [
+      1,
+      2,
+      3
+    ],
+    "q16d": [
+      1,
+      2,
+      3
+    ],
+    "q17": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q18": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q21": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q19a": [
+      1,
+      2
+    ],
+    "q19b": [
+      1,
+      2
+    ],
+    "q19c": [
+      1,
+      2
+    ],
+    "q20a": [
+      1,
+      2
+    ],
+    "q20b": [
+      1,
+      2
+    ],
+    "q20c": [
+      1,
+      2
+    ],
+    "q22a": [
+      1,
+      2
+    ],
+    "q22b": [
+      1,
+      2
+    ],
+    "q22c": [
+      1,
+      2
+    ],
+    "q22d": [
+      1,
+      2
+    ],
+    "q22e": [
+      1,
+      2
+    ],
+    "q22f": [
+      1,
+      2
+    ],
+    "q12Excl": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "q22Exclb": [
+      1,
+      2
+    ],
+    "q22Exclc": [
+      1,
+      2
+    ],
+    "q22Excld": [
+      1,
+      2
+    ],
+    "q22Excle": [
+      1,
+      2
+    ],
+    "q22Exclf": [
+      1,
+      2
+    ]
+  },
+  "POSSIBLE_RESPONSES_BY_QUESTION_ANNEX_3_ROWS": {
+    "q1Std": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "q1ER": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q1Comb": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q2aStd": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "q2aER": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q2aComb": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q2b": [
+      1,
+      2
+    ],
+    "q2c": [
+      1,
+      2,
+      3
+    ],
+    "q3a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q3b": [
+      1,
+      2
+    ],
+    "q4a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q4b": [
+      1,
+      2
+    ],
+    "q5a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q5b": [
+      1,
+      2
+    ],
+    "q6a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q6b": [
+      1,
+      2
+    ],
+    "q7a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q7b": [
+      1,
+      2
+    ],
+    "q8a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q8b": [
+      1,
+      2
+    ],
+    "q9a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q9b": [
+      1,
+      2
+    ],
+    "q10": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q11": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q12": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q13": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "q14a": [
+      1,
+      2,
+      3
+    ],
+    "q14b": [
+      1,
+      2,
+      3
+    ],
+    "q15a": [
+      1,
+      2,
+      3
+    ],
+    "q15b": [
+      1,
+      2,
+      3
+    ],
+    "q15c": [
+      1,
+      2,
+      3
+    ],
+    "q15d": [
+      1,
+      2,
+      3
+    ],
+    "q16a": [
+      1,
+      2,
+      3
+    ],
+    "q16b": [
+      1,
+      2,
+      3
+    ],
+    "q16c": [
+      1,
+      2,
+      3
+    ],
+    "q16d": [
+      1,
+      2,
+      3
+    ],
+    "q17": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q18": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q21": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "q19a": [
+      1,
+      2
+    ],
+    "q19b": [
+      1,
+      2
+    ],
+    "q19c": [
+      1,
+      2
+    ],
+    "q20a": [
+      1,
+      2
+    ],
+    "q20b": [
+      1,
+      2
+    ],
+    "q20c": [
+      1,
+      2
+    ],
+    "q22a": [
+      1,
+      2
+    ],
+    "q22b": [
+      1,
+      2
+    ],
+    "q22c": [
+      1,
+      2
+    ],
+    "q22d": [
+      1,
+      2
+    ],
+    "q22e": [
+      1,
+      2
+    ],
+    "q22f": [
+      1,
+      2
+    ]
+  },
+  "DEMOGRAPHIC_VALUES_BY_DEMOGRAPHIC": {
+    "Gender": [
+      "Male",
+      "Female",
+      "Other"
+    ],
+    "Ethnicity": [
+      "Asian or Asian British",
+      "Black or Black British",
+      "Mixed",
+      "Not Stated",
+      "Other",
+      "White"
+    ],
+    "Religion": [
+      "Buddhist",
+      "Christian",
+      "Hindu",
+      "Jewish",
+      "Muslim",
+      "None",
+      "Other",
+      "Refused to say",
+      "Sikh"
+    ],
+    "PrimarySupportReason": [
+      "Learning Disability Support",
+      "Mental Health Support",
+      "Physical Support",
+      "Sensory Support",
+      "Social Support",
+      "Support with Memory and Cognition"
+    ],
+    "Stratum": [
+      "1 - Learning disability support [all ages]",
+      "2 - 18-64, excluding learning disability support",
+      "3 - 65 and over in residential care, excluding learning disability support",
+      "4 - 65 and over in the community, excluding learning disability support"
+    ],
+    "Sexuality": [
+      "Don't know / Refused",
+      "Gay / Lesbian / Bisexual / Other",
+      "Heterosexual / Straight"
+    ],
+    "Questionnaire": [
+      "Questionnaire for service users in resdiential or nursing care",
+      "Questionnaire for service users in the community",
+      "Easy-read questionnaire"
+    ],
+    "MethodCollection": [
+      "Post",
+      "Face-to-face interview",
+      "Telephone interview"
+    ],
+    "SupportSetting": [
+      "Community",
+      "Nursing Care",
+      "Residential Care"
+    ],
+    "MechOfDelivery": [
+      "Direct Payment Only",
+      "LA Commissioned Support Only",
+      "LA Managed Personal Budget",
+      "Not applicable",
+      "Part Direct Payment"
+    ],
+    "FullCost": [
+      "No",
+      "Yes"
+    ],
+    "Translated": [
+      "Yes",
+      "No"
+    ],
+    "RHC_autism": [
+      "Yes",
+      "No"
+    ],
+    "RHC_asperger": [
+      "Yes",
+      "No"
+    ],
+    "Age": [
+      "18-24",
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64",
+      "65-74",
+      "75-84",
+      "85-inf"
+    ]
+  },
+  "LOW_NUMBERS_OF_RESPONDENTS_TO_SUPRESS_FOR": [
+    1,
+    2
+  ],
+  "RESPONDENTS_LOW_SUPPRESSION_LABEL": "[c]",
+  "RESPONDENTS_ZERO_SUPRESSION_LABEL_STANDARD": "[w]",
+  "RESPONDENTS_ZERO_SUPRESSION_LABEL_BY_LA": "[x]",
+  "ACCEPTED_VALUES_STANDARD_QUESTIONS": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7, NaN
+  ],
+  "ACCEPTED_VALUES_EASY_READ_QUESTIONS": [
+    1,
+    2,
+    3,
+    4,
+    5, NaN
+  ],
+  "MULTICHOICE_SUBQUESTIONS_ALLOWED_VALUES": [
+    1,
+    2, NaN
+  ],
+  "QUESTION_DOUBLE_DIGIT_FORMAT": {
+    "q1Std": "q01Std",
+    "q1ER": "q01ER",
+    "q1Comb": "q01Comb",
+    "q2aStd": "q02aStd",
+    "q2aER": "q02aER",
+    "q2aComb": "q02aComb",
+    "q2b": "q02b",
+    "q2c": "q02c",
+    "q3a": "q03a",
+    "q3b": "q03b",
+    "q4a": "q04a",
+    "q4b": "q04b",
+    "q5a": "q05a",
+    "q5b": "q05b",
+    "q6a": "q06a",
+    "q6b": "q06b",
+    "q7a": "q07a",
+    "q7b": "q07b",
+    "q8a": "q08a",
+    "q8b": "q08b",
+    "q9a": "q09a",
+    "q9b": "q09b"
+  },
+  "VALIDATION_COLUMNS_THAT_SHOULD_BE_NO_FOR_NON_RESPONDENTS": [
+    "Advocate",
+    "Interpreter"
+  ],
+  "DATA_RETURN": {
+    "NEW_COLUMN_NAMES_BY_EXPECTED_COLUMN_SUBSTRING": {
+      "LaCode": "LaCode",
+      "SerialNumber": "SerialNo",
+      "PrimaryKey": "PrimaryKey",
+      "Stratum": "Stratum",
+      "Population In Stratum": "PopInStratum",
+      "Method of Collection": "MethodCollection",
+      "Response": "Response",
+      "Gender": "Gender",
+      "Age": "Age",
+      "Ethnic": "Ethnicity",
+      "Sexual Orientation": "Sexuality",
+      "Religion": "Religion",
+      "PrimarySupportReason": "PrimarySupportReason",
+      "SupportSetting": "SupportSetting",
+      "MechanismOfDelivery": "MechOfDelivery",
+      "FullCost": "FullCost",
+      "GrossAnnualBudget": "GrossAnnualBudget",
+      "Budget include any Contribution": "BudgetContribution",
+      "Budget include any Equipment": "BudgetEquipment",
+      "Budget include any CareHome": "BudgetCareHome",
+      "Other streams of funding": "OtherIncome",
+      "CentrallyFundedServices": "CentrallyFundedServices",
+      "types of CentrallyFunded": "CentrallyFundedInfo",
+      "chronic obstructive": "RHC_copd",
+      "cancer": "RHC_cancer",
+      "acquired_physical_inj": "RHC_acquired_phys_inj",
+      "HIV / AIDS": "RHC_HIV_AIDS",
+      "other long term health condition - physical": "RHC_other_physical",
+      "stroke": "RHC_stroke",
+      "parkinson": "RHC_parkinsons",
+      "motor_neurone": "RHC_motor_neurone",
+      "acquired_brain_inj": "RHC_acquired_brain_inj",
+      "other long term health condition - neurological": "RHC_other_neuro_condition",
+      "visually_impaired": "RHC_visually_impaired",
+      "hearing_impaired": "RHC_hearing_impaired",
+      "other_sensory": "RHC_other_sensory",
+      "learning disability": "RHC_LD",
+      "autism": "RHC_autism",
+      "asperger": "RHC_asperger",
+      "other learning": "RHC_other_LD",
+      "dementia": "RHC_dementia",
+      "other_mental health": "RHC_other_mh",
+      "no relevant long term": "RHC_none",
+      "Advocate": "Advocate",
+      "Interpreter": "Interpreter",
+      "Language": "Translated",
+      "Questionnaire": "Questionnaire",
+      "Replacement": "Replacement",
+      "Original mailing or a Reminder": "OriginalReminder",
+      "Request a copy": "CopyRequested",
+      "q1": "q1",
+      "q2a": "q2a",
+      "q2b": "q2b",
+      "q2c": "q2c",
+      "q3a": "q3a",
+      "q3b": "q3b",
+      "q4a": "q4a",
+      "q4b": "q4b",
+      "q5a": "q5a",
+      "q5b": "q5b",
+      "q6a": "q6a",
+      "q6b": "q6b",
+      "q7a": "q7a",
+      "q7b": "q7b",
+      "q8a": "q8a",
+      "q8b": "q8b",
+      "q9a": "q9a",
+      "q9b": "q9b",
+      "q10": "q10",
+      "q11": "q11",
+      "q12": "q12",
+      "q13": "q13",
+      "q14a": "q14a",
+      "q14b": "q14b",
+      "q15a": "q15a",
+      "q15b": "q15b",
+      "q15c": "q15c",
+      "q15d": "q15d",
+      "q16a": "q16a",
+      "q16b": "q16b",
+      "q16c": "q16c",
+      "q16d": "q16d",
+      "q17": "q17",
+      "q18": "q18",
+      "q19a": "q19a",
+      "q19b": "q19b",
+      "q19c": "q19c",
+      "q20a": "q20a",
+      "q20b": "q20b",
+      "q20c": "q20c",
+      "q21": "q21",
+      "q22a": "q22a",
+      "q22b": "q22b",
+      "q22c": "q22c",
+      "q22d": "q22d",
+      "q22e": "q22e",
+      "q22f": "q22f"
+    },
+    "STRING_COLUMNS": [
+      "LaCode",
+      "SerialNo",
+      "PrimaryKey",
+      "CentrallyFundedInfo"
+    ],
+    "ACCEPTABLE_RANGE": {
+      "MethodCollection": [
+        1,
+        4
+      ],
+      "Response": [
+        1,
+        3
+      ],
+      "Age": [
+        18,
+      Infinity
+      ],
+      "GrossAnnualBudget": [
+        1,
+        1000000
+      ],
+      "BudgetContribution": [
+        1,
+        2
+      ],
+      "BudgetEquipment": [
+        1,
+        2
+      ],
+      "BudgetCareHome": [
+        1,
+        2
+      ],
+      "OtherIncome": [
+        1,
+        2
+      ],
+      "Advocate": [
+        1,
+        2
+      ],
+      "Interpreter": [
+        1,
+        2
+      ],
+      "Translated": [
+        1,
+        19
+      ],
+      "Questionnaire": [
+        1,
+        3
+      ],
+      "Replacement": [
+        1,
+        2
+      ],
+      "OriginalReminder": [
+        1,
+        2
+      ],
+      "q1": [
+        1,
+        7
+      ],
+      "q2a": [
+        1,
+        7
+      ],
+      "q2b": [
+        1,
+        2
+      ],
+      "q2c": [
+        1,
+        3
+      ],
+      "q3a": [
+        1,
+        4
+      ],
+      "q3b": [
+        1,
+        3
+      ],
+      "q4a": [
+        1,
+        4
+      ],
+      "q4b": [
+        1,
+        3
+      ],
+      "q5a": [
+        1,
+        4
+      ],
+      "q5b": [
+        1,
+        3
+      ],
+      "q6a": [
+        1,
+        4
+      ],
+      "q6b": [
+        1,
+        3
+      ],
+      "q7a": [
+        1,
+        4
+      ],
+      "q7b": [
+        1,
+        2
+      ],
+      "q8a": [
+        1,
+        4
+      ],
+      "q8b": [
+        1,
+        3
+      ],
+      "q9a": [
+        1,
+        4
+      ],
+      "q9b": [
+        1,
+        3
+      ],
+      "q10": [
+        1,
+        4
+      ],
+      "q11": [
+        1,
+        4
+      ],
+      "q12": [
+        1,
+        5
+      ],
+      "q13": [
+        1,
+        5
+      ],
+      "q14a": [
+        1,
+        3
+      ],
+      "q14b": [
+        1,
+        3
+      ],
+      "q15a": [
+        1,
+        3
+      ],
+      "q15b": [
+        1,
+        3
+      ],
+      "q15c": [
+        1,
+        3
+      ],
+      "q15d": [
+        1,
+        3
+      ],
+      "q16a": [
+        1,
+        3
+      ],
+      "q16b": [
+        1,
+        3
+      ],
+      "q16c": [
+        1,
+        3
+      ],
+      "q16d": [
+        1,
+        3
+      ],
+      "q17": [
+        1,
+        4
+      ],
+      "q18": [
+        1,
+        4
+      ],
+      "q19a": [
+        1,
+        2
+      ],
+      "q19b": [
+        1,
+        2
+      ],
+      "q19c": [
+        1,
+        2
+      ],
+      "q20a": [
+        1,
+        2
+      ],
+      "q20b": [
+        1,
+        2
+      ],
+      "q20c": [
+        1,
+        2
+      ],
+      "q21": [
+        1,
+        4
+      ],
+      "q22a": [
+        1,
+        2
+      ],
+      "q22b": [
+        1,
+        2
+      ],
+      "q22c": [
+        1,
+        2
+      ],
+      "q22d": [
+        1,
+        2
+      ],
+      "q22e": [
+        1,
+        2
+      ],
+      "q22f": [
+        1,
+        2
+      ]
+    }
+  },
+  "ASCOF_CONVERSIONS": [
+    {
+      "SCORE_NAME": "ASCOF_1B",
+      "QUESTION_COLUMN": "q3a",
+      "CONVERSION": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 2
+      }
+    },
+    {
+      "SCORE_NAME": "ASCOF_1L1",
+      "QUESTION_COLUMN": "q8a",
+      "CONVERSION": {
+        "1": 1,
+        "2": 2,
+        "3": 2,
+        "4": 2
+      }
+    },
+    {
+      "SCORE_NAME": "ASCOF_3A",
+      "QUESTION_COLUMN": "q1Comb",
+      "CONVERSION": {
+        "1": 1,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "5": 2
+      }
+    },
+    {
+      "SCORE_NAME": "ASCOF_3D1",
+      "QUESTION_COLUMN": "q12",
+      "CONVERSION": {
+        "1": NaN,
+        "2": 1,
+        "3": 1,
+        "4": 2,
+        "5": 2
+      }
+    },
+    {
+      "SCORE_NAME": "ASCOF_4A",
+      "QUESTION_COLUMN": "q7a",
+      "CONVERSION": {
+        "1": 1,
+        "2": 2,
+        "3": 2,
+        "4": 2
+      }
+    },
+    {
+      "SCORE_NAME": "ASCOF_4B",
+      "QUESTION_COLUMN": "q7b",
+      "CONVERSION": {
+        "1": 1,
+        "2": 2
+      }
+    }
+  ]
+}
